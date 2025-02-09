@@ -1,10 +1,15 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router'
+import GiftSugestion from './pages/giftSugestion'
+import Confirmation from './pages/confirmation'
 
 function App() {
   return (
-    <>
-      <h1 className='text-blue-500'>teste</h1>
-    </>
+    <Routes>
+      <Route path='/' element={<Confirmation/>} />
+      <Route path='/location' element={<Location/>} />
+      <Route path='/giftSugestion' element={<GiftSugestion/>} /> 
+    </Routes>
   )
 }
 
