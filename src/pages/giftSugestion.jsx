@@ -73,6 +73,7 @@ export default function GiftSugestion(){
                         </div>
                     ))}
                 </div>
+                <p className="text-white mb-4 underline">Calçados e Roupas com opção de Troca</p>
             </main>
         </>
     )
