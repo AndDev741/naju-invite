@@ -5,11 +5,13 @@ import Confirmation from './pages/confirmation'
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Confirmation/>} />
-      <Route path='/location' element={<Location/>} />
-      <Route path='/giftSugestion' element={<GiftSugestion/>} /> 
-    </Routes>
+    <div className='bg-[#041C34]'>
+      <Routes>
+        <Route path='/' element={<Confirmation/>} />
+        <Route path='/location' element={<Location/>} />
+        <Route path='/sugestao' element={<GiftSugestion/>} /> 
+      </Routes>
+    </div>
   )
 }
 
