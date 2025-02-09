@@ -42,7 +42,7 @@ export default function GiftSugestion(){
     return(
         <>
             <Header/>
-            <main className="flex flex-col items-center mt-12">
+            <main className="flex flex-col items-center mt-12 min-h-[100vh]">
                 <h2 className="text-white text-2xl">Sugestão de presentes</h2>
                 <h3 className="text-[#DAA520] text-2xl mt-6 mb-2">Perfumaria</h3>
                 <div className="flex flex-wrap items-center justify-center text-center text-[#DAA520] w-[90vw] border-2 border-[#DAA520]">
