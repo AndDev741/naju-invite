@@ -20,7 +20,7 @@ export default function Invites(){
                 <ul>
                     {invites.map((invite, index) => (
                         <li key={index} className="text-white list-disc">
-                            {invite.name}
+                            {invite.invites}
                         </li>
                     ))}
                 </ul>
