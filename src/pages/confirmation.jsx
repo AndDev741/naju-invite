@@ -3,23 +3,16 @@ import Header from "../component/header";
 import { getInvites, saveInvite } from "../component/api";
 
 export default function Confirmation(){
-    const [invites, setInvites] = useState([]);
     const [name, setName] = useState("");
+    const [sucess, setSuccess] = useState("");
 
-    useEffect(() => {
-        const invites = async () => {
-            const nomesObtidos = await getInvites();
-            setInvites(nomesObtidos);
-          };
-          invites();
-    }, [])
 
     const handleAddInvite = async () => {
         if (name === "") return;
 
         await saveInvite(name);
-        setInvites([...invites, name]);
         setName(""); 
+        setSuccess("Presença Confirmada com Sucesso!")
     };
 
     return(
@@ -46,13 +39,7 @@ export default function Confirmation(){
                         Dia 15 de março <br/>
                     às 19:00</p>
                 </div>
-                <h2 className="text-[#DAA520] text-2xl my-3">Convidados</h2>
-                <ul>
-                    {invites.map((name, index) => (
-                    <li className="text-white list-disc" 
-                    key={index}>{name}</li>
-                    ))}
-                </ul>
+                <p className="text-[#DAA520] text-2xl my-1 mb-4">{sucess}</p>
             </main> 
         </>
     )
