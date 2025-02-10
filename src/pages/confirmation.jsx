@@ -39,7 +39,7 @@ export default function Confirmation(){
                         Dia 15 de março <br/>
                     às 19:00</p>
                 </div>
-                <p className="text-[#DAA520] text-2xl my-1 mb-4">{sucess}</p>
+                <p className="text-[#DAA520] text-2xl my-1 mb-4 text-center">{sucess}</p>
             </main> 
         </>
     )
