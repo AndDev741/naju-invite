@@ -10,16 +10,16 @@ export default function Location(){
                     Localização
                 </h2>
                 <div className="flex items-center justify-center w-[90vw] h-[300px] md:w-[700px] md:h-[400px] mb-5 md:mb-0">
-                    <Map  defaultCenter={[-16.8103, -49.2973]} defaultZoom={15} metaWheelZoom={true}>
-                        <Marker width={50} anchor={[-16.8103, -49.2973]} />
+                    <Map  defaultCenter={[-16.7585, -49.2643]} defaultZoom={15} metaWheelZoom={true}>
+                        <Marker width={50} anchor={[-16.7585, -49.2643]} />
                         <ZoomControl />
                     </Map>
                 </div>
                 <p className="text-center text-white text-lg">
-                Alameda Dona Gercina Borges, Qd K-41, chácara 6 - Bairro Independência, Aparecida de Goiânia - GO, 74967-470
+                Av. Independência, Qd 29 - Lt 01 - Jardim Mont Serrat, Aparecida de Goiânia - GO, 74917-490, Brasil
                 </p>
                 <a className="underline text-xl text-[#DAA520]" 
-                href="https://www.google.com/maps/place/Espa%C3%A7o+De+Eventos+Princesa/@-16.8106132,-49.2982534,17.29z/data=!4m6!3m5!1s0x935ef9ce347f7d09:0x71bcfaa31423bd21!8m2!3d-16.8103732!4d-49.2969748!16s%2Fg%2F11l6x0vzk6?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x935efa0cc86b8839:0x5fc33cb9f0ec1840%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwinpqH9u8WLAxWgUMMIHV2lAYgQ4kB6BAhJEAM&usg=AOvVaw22ArXuMY9vf2uzW9bmib5R"
                 target="_blank">
                     Veja no google maps</a>
             </main>
