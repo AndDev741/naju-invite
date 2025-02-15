@@ -35,8 +35,8 @@ export default function GiftSugestion(){
         {name: "GLOSS", description: "GLOSSLICIOUS "},
         {name: "Gelatina ", description: "Salon Line"},
         {name: "Creme de pentear", description: "Salon Line"},
-        {name: "Shampoo e Condionador", description: "Eudora/Salon Line/Oboticário/Ox"},
-        {name: "Máscara de Hidratação/Nutrição/Restauração", description: "Elseve/Eudora"},
+        {name: "Shampoo e Condionador", description: "Eudora/Oboticário"},
+        {name: "Máscara de Hidratação/Nutrição/Restauração", description: "Eudora/Oboticário"},
         {name: "Kit de skincare", description: "hidratantes, máscaras faciais"},
     ]
     return(
