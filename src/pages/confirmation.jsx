@@ -5,14 +5,25 @@ import { getInvites, saveInvite } from "../component/api";
 export default function Confirmation(){
     const [name, setName] = useState("");
     const [sucess, setSuccess] = useState("");
+    const [readyToConfirm, setReadyToConfirm] = useState(true);
 
 
     const handleAddInvite = async () => {
-        if (name === "") return;
+        if(readyToConfirm){
+            if (name === "") return;
+            setReadyToConfirm(false);
+            await saveInvite(name);
+            setName(""); 
+            setSuccess("Presença Confirmada com Sucesso!");
+            
 
-        await saveInvite(name);
-        setName(""); 
-        setSuccess("Presença Confirmada com Sucesso!")
+            setTimeout(() => {
+                setReadyToConfirm(true)
+            }, 2000);
+
+        }else{
+            setSuccess("Presença já confirmada!");
+        }
     };
 
     return(
