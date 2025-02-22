@@ -23,6 +23,7 @@ export default function Invites(){
                             {invite}
                         </li>
                     ))}
+                    <p className="text-white font-bold">Total de confirmados: {invites.length}</p>
                 </ul>
             </main>
         </>
